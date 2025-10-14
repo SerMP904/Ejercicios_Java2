@@ -20,7 +20,7 @@ const miLogger = imprimir('probando');
 //4
 
 let esPar = (n) => {
-    let par = 'undefined';
+    let par = '';
     if (n % 2 === 0){
         par = 'true';
     } else {
@@ -29,8 +29,8 @@ let esPar = (n) => {
     return par
 }
 
-console.log(esPar(3));
-console.log(esPar(10));
+console.log('este número es' +esPar(3));
+console.log('este número es' +esPar(10));
 
 //5
 
