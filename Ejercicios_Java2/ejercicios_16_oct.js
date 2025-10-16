@@ -207,3 +207,38 @@ function Sumador2(array, a = 0, Sumador = []) {
 Sumador2(Prueba)
 
 //12
+const usuarios = [
+    usur1 = {
+        nombre: "a",
+        edad: 30,
+        email: "a@gmail.com"
+    },
+    usur2 = {
+        nombre: "b",
+        edad: 35,
+        email: "b@gmail.com"
+    },
+    usur3 = {
+        nombre: "c",
+        edad: 40,
+        email: "c@gmail.com"
+    },
+    usur4 = {
+        nombre: "d",
+        edad: 45,
+        email: "d@gmail.com"
+    }
+]
+
+function buscarUsuario(email){
+   for (a = 0; a < usuarios.length; a++){
+    if (usuarios[a].email === email){
+        console.log(usuarios[a].nombre)
+        return usuarios[a];
+    }
+   }
+}
+buscarUsuario("a@gmail.com")
+
+let usuarioFormateo = usuarios.map(elemento => `Usuario: ${elemento.nombre} | Edad: ${elemento.edad} | Email: ${elemento.email}.`);
+console.log(usuarioFormateo);
